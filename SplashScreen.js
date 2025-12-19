@@ -27,7 +27,8 @@ const SplashScreen = ({ onFinish }) => {
     }, 2500);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, 
+);
 
   return (
     <View style={styles.container}>
@@ -84,5 +85,6 @@ const styles = StyleSheet.create({
     opacity: 0.8,
   },
 });
+
 
 export default SplashScreen;
